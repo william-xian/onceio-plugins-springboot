@@ -18,14 +18,14 @@ import top.onceio.mvc.annocations.Api;
 import top.onceio.mvc.annocations.Param;
 import top.onceio.util.OReflectUtil;
 
-public abstract class SpringDaoProvider<T extends OEntity> implements Dao<T> {
+public abstract class SpringDaoHolder<T extends OEntity> implements Dao<T> {
 	@Autowired
 	protected DaoHelper daoHelper;
 	private Class<T> tbl;
 	@SuppressWarnings("unchecked")
-	public SpringDaoProvider() {
-		Type t = SpringDaoProvider.class.getTypeParameters()[0];
-		tbl = (Class<T>) OReflectUtil.searchGenType(SpringDaoProvider.class, this.getClass(), t);
+	public SpringDaoHolder() {
+		Type t = SpringDaoHolder.class.getTypeParameters()[0];
+		tbl = (Class<T>) OReflectUtil.searchGenType(SpringDaoHolder.class, this.getClass(), t);
 	}
 
 	public DaoHelper getDaoHelper() {
