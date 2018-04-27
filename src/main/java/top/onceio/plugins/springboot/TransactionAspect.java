@@ -9,8 +9,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import top.onceio.aop.annotation.Transactional;
-import top.onceio.db.dao.impl.DaoHelper;
+import top.onceio.core.aop.annotation.Transactional;
+import top.onceio.core.db.dao.impl.DaoHelper;
 
 @Component  
 @Aspect
@@ -18,7 +18,7 @@ public class TransactionAspect {
 	@Autowired
 	private DaoHelper daoHelper;
 	
-    @Pointcut(value = "@annotation(top.onceio.aop.annotation.Transactional)")  
+    @Pointcut(value = "@annotation(top.onceio.core.aop.annotation.Transactional)")  
     public void access() {
     }
     @Before("access()")  

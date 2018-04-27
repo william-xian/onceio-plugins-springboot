@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import top.onceio.beans.BeansEden;
-import top.onceio.db.dao.impl.DaoHelper;
-import top.onceio.db.jdbc.JdbcHelper;
+import top.onceio.core.beans.BeansEden;
+import top.onceio.core.db.dao.impl.DaoHelper;
+import top.onceio.core.db.jdbc.JdbcHelper;
 
 @Configuration
 @Component

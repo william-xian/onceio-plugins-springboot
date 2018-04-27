@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import top.onceio.db.dao.impl.DaoHelper;
-import top.onceio.db.jdbc.JdbcHelper;
+import top.onceio.core.db.dao.impl.DaoHelper;
+import top.onceio.core.db.jdbc.JdbcHelper;
 
 @Configuration
 @AutoConfigureAfter({OnceIORunner.class})

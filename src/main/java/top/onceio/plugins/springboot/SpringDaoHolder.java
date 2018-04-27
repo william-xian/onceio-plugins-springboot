@@ -6,17 +6,17 @@ import java.util.function.Consumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import top.onceio.beans.ApiMethod;
-import top.onceio.db.dao.Cnd;
-import top.onceio.db.dao.Dao;
-import top.onceio.db.dao.Page;
-import top.onceio.db.dao.impl.DaoHelper;
-import top.onceio.db.dao.tpl.SelectTpl;
-import top.onceio.db.dao.tpl.UpdateTpl;
-import top.onceio.db.tbl.OEntity;
-import top.onceio.mvc.annocations.Api;
-import top.onceio.mvc.annocations.Param;
-import top.onceio.util.OReflectUtil;
+import top.onceio.core.beans.ApiMethod;
+import top.onceio.core.db.dao.Cnd;
+import top.onceio.core.db.dao.Dao;
+import top.onceio.core.db.dao.Page;
+import top.onceio.core.db.dao.impl.DaoHelper;
+import top.onceio.core.db.dao.tpl.SelectTpl;
+import top.onceio.core.db.dao.tpl.UpdateTpl;
+import top.onceio.core.db.tbl.OEntity;
+import top.onceio.core.mvc.annocations.Api;
+import top.onceio.core.mvc.annocations.Param;
+import top.onceio.core.util.OReflectUtil;
 
 public abstract class SpringDaoHolder<T extends OEntity> implements Dao<T> {
 	@Autowired
