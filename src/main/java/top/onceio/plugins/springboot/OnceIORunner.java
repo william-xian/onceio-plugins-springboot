@@ -36,7 +36,7 @@ public class OnceIORunner implements ApplicationRunner {
 		BeansEden.get().store(DaoHelper.class, null, daoHelper);
 
 		System.out.println(packages);
-		BeansEden.get().resovle(packages);
+		BeansEden.get().resovle(new String[] {"conf"},packages.split(";"));
 		
 		
 	}
